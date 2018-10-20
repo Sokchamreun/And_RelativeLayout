@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sokchamreun.relativelayout.MainActivity">
+
+    <EditText
+        android:id="@+id/txtName"
+        android:hint="Name"
+        android:background="#d7cfcf"
+        android:layout_width="380px"
+        android:padding="50px"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginLeft="20px"
+        android:id="@+id/txtAdd"
+        android:hint="Address"
+        android:padding="50px"
+        android:background="#d7cfcf"
+        android:layout_toRightOf="@id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtSubject"
+        android:background="#d7cfcf"
+        android:layout_marginTop="20px"
+        android:padding="50px"
+        android:hint="Subject"
+        android:layout_below="@id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtSMS"
+        android:hint="Message"
+        android:background="#d7cfcf"
+        android:layout_marginTop="20px"
+        android:layout_below="@id/txtSubject"
+        android:layout_width="match_parent"
+        android:lines="10"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/txtSMS"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
